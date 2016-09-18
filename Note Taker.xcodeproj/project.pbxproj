@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0209634C1D8AF53F0020A286 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209634B1D8AF53F0020A286 /* NoteTableViewController.swift */; };
+		0209634E1D8AF6FD0020A286 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209634D1D8AF6FD0020A286 /* Note.swift */; };
 		02FC79811D8ADE3200EEE00A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC79801D8ADE3200EEE00A /* AppDelegate.swift */; };
-		02FC79831D8ADE3200EEE00A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC79821D8ADE3200EEE00A /* ViewController.swift */; };
 		02FC79861D8ADE3200EEE00A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02FC79841D8ADE3200EEE00A /* Main.storyboard */; };
 		02FC79881D8ADE3200EEE00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02FC79871D8ADE3200EEE00A /* Assets.xcassets */; };
 		02FC798B1D8ADE3200EEE00A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02FC79891D8ADE3200EEE00A /* LaunchScreen.storyboard */; };
+		02FC79931D8AE89500EEE00A /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC79921D8AE89500EEE00A /* NoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0209634B1D8AF53F0020A286 /* NoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
+		0209634D1D8AF6FD0020A286 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		02FC797D1D8ADE3200EEE00A /* Note Taker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Note Taker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FC79801D8ADE3200EEE00A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02FC79821D8ADE3200EEE00A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		02FC79851D8ADE3200EEE00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02FC79871D8ADE3200EEE00A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02FC798A1D8ADE3200EEE00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02FC798C1D8ADE3200EEE00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02FC79921D8AE89500EEE00A /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				02FC79801D8ADE3200EEE00A /* AppDelegate.swift */,
-				02FC79821D8ADE3200EEE00A /* ViewController.swift */,
 				02FC79841D8ADE3200EEE00A /* Main.storyboard */,
+				0209634B1D8AF53F0020A286 /* NoteTableViewController.swift */,
+				0209634D1D8AF6FD0020A286 /* Note.swift */,
+				02FC79921D8AE89500EEE00A /* NoteTableViewCell.swift */,
 				02FC79871D8ADE3200EEE00A /* Assets.xcassets */,
 				02FC79891D8ADE3200EEE00A /* LaunchScreen.storyboard */,
 				02FC798C1D8ADE3200EEE00A /* Info.plist */,
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02FC79831D8ADE3200EEE00A /* ViewController.swift in Sources */,
+				0209634E1D8AF6FD0020A286 /* Note.swift in Sources */,
+				0209634C1D8AF53F0020A286 /* NoteTableViewController.swift in Sources */,
 				02FC79811D8ADE3200EEE00A /* AppDelegate.swift in Sources */,
+				02FC79931D8AE89500EEE00A /* NoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +310,7 @@
 				02FC79911D8ADE3200EEE00A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
