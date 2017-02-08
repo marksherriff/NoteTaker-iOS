@@ -12,6 +12,7 @@ class NoteTableViewController: UITableViewController {
     
     //MARK: Properties - Notes
     
+   
     var notes = [Note]()
     
     func loadSampleNotes() {
@@ -97,18 +98,37 @@ class NoteTableViewController: UITableViewController {
         return true
     }
     
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+//    // Override to support editing the table view if you wanted just a delete button
+//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+//        
+//        if editingStyle == .delete {
+//            // Delete the row from the data source
+//            notes.remove(at: indexPath.row)
+//            // Delete the row from the view
+//            tableView.deleteRows(at: [indexPath], with: .fade)
+//        } else if editingStyle == .insert {
+//            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+//        }    
+//    }
+    
+    // Lets you add various buttons when you swipe
+    override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
+        let done = UITableViewRowAction(style: .normal, title: "Done") { action, index in
+            
+            
+        }
+        done.backgroundColor = .green
         
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            notes.remove(at: indexPath.row)
-            // Delete the row from the view
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        let edit = UITableViewRowAction(style: .normal, title: "Edit") { action, index in
+            
+            
+        }
+        edit.backgroundColor = .orange
+        
+        
+        return [done, edit]
     }
+
     
 
     
