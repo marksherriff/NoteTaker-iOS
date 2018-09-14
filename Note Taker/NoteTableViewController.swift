@@ -10,9 +10,8 @@ import UIKit
 
 class NoteTableViewController: UITableViewController {
     
-    //MARK: Properties - Notes
+    //MARK: Properties
     
-   
     var notes = [Note]()
     
     func loadSampleNotes() {
